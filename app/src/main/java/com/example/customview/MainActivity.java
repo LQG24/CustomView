@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.os.Bundle;
+import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mRootLLayout =findViewById(R.id.root_clayout);
 //        mRootLLayout.addView(new SimgleDraw(this));
-        mRootLLayout.addView(new MyRegionView(this));
+//        mRootLLayout.addView(new MyRegionView(this));
+        mRootLLayout.addView(new DrawText(this),new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
     }
 }
