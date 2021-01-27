@@ -10,7 +10,7 @@ import android.os.Handler;
 import android.view.View;
 
 /**
- * 自定义画圆再加动效
+ * 自定义画圆再加动效 valueAnimator
  *
  * https://blog.csdn.net/harvic880925/article/details/50546884
 * */

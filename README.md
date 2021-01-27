@@ -10,4 +10,5 @@
 # DrawText:drawText()详解  关于drawText的四线格与FontMetrics
 
 ################################动画篇################################
-#PointView 用Evalutor实现自绘图片并加动效，还增加ARGB渐变
+#PointView 用valueAnimation Evalutor实现自绘并加动效，还增加ARGB渐变
+#OAnimPointView  objectAnimation实现自绘并加动效
