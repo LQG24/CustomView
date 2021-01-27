@@ -17,14 +17,18 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        mRootLLayout =findViewById(R.id.root_clayout);
+//        setContentView(R.layout.activity_main);
+//        mRootLLayout =findViewById(R.id.root_clayout);
+
+
+        setContentView(R.layout.activity_test_layout);
+
 
 //        addSingleDraw();
 //        mRootLLayout.addView(new MyRegionView(this));
 //        mRootLLayout.addView(new DrawText(this),new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
 //        mRootLLayout.addView(new PointView(this),new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
-        addObjectAnimatorView();
+//        addObjectAnimatorView();
     }
 
     /**

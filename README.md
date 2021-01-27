@@ -12,3 +12,6 @@
 ################################动画篇################################
 #PointView 用valueAnimation Evalutor实现自绘并加动效，还增加ARGB渐变
 #OAnimPointView  objectAnimation实现自绘并加动效
+
+##########################视图篇################################
+#TestLayout 自定义ViewGroup 实现添加子view和支持设置margin
