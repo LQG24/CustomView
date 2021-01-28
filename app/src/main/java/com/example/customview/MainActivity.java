@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 //        mRootLLayout =findViewById(R.id.root_clayout);
 
 
-        setContentView(R.layout.activity_test_layout);
+        setContentView(R.layout.activity_flow_layout);
 
 
 //        addSingleDraw();
@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //
     private void addSingleDraw() {
         mRootLLayout.addView(new SimgleDraw(this));
     }
