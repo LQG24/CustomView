@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.customview.Animator.OAnimPointView;
+import com.example.customview.View.CustomLayoutManager;
 import com.example.customview.View.LinearItemDecoration;
 
 import java.util.ArrayList;
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mRootLLayout = findViewById(R.id.root_clayout);
         RecyclerView recyclerView = new RecyclerView(this);
-        recyclerView.addItemDecoration(new LinearItemDecoration(this));
+//        recyclerView.addItemDecoration(new LinearItemDecoration(this));
 
         ArrayList<String> mDatas = new ArrayList<>();
 
@@ -55,7 +56,8 @@ public class MainActivity extends AppCompatActivity {
             mDatas.add("第 " + i + " 个item");
         }
         MyAdater myAdater = new MyAdater(mDatas);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(new CustomLayoutManager());
         recyclerView.setAdapter(myAdater);
         mRootLLayout.addView(recyclerView, new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
     }
