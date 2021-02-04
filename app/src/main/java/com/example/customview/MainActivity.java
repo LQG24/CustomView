@@ -3,6 +3,7 @@ package com.example.customview;
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,14 +12,12 @@ import android.widget.TextView;
 
 import com.example.customview.Animator.OAnimPointView;
 import com.example.customview.View.CustomLayoutManager;
-import com.example.customview.View.LinearItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class MainActivity extends AppCompatActivity {
@@ -64,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
 
     private class MyAdater extends RecyclerView.Adapter<MyViewHolder> {
         private List<String> mList;
+        private int createView = 0;
+        private int bindView = 0;
 
         public MyAdater(ArrayList<String> mDatas) {
             super();
@@ -73,12 +74,16 @@ public class MainActivity extends AppCompatActivity {
         @NonNull
         @Override
         public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+            ++createView;
+            Log.i(MainActivity.class.getSimpleName(), "onCreateViewHolder:" + createView);
             View itemView = LayoutInflater.from(getBaseContext()).inflate(R.layout.item_list, parent, false);
             return new MyViewHolder(itemView);
         }
 
         @Override
         public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+            ++bindView;
+            Log.i(MainActivity.class.getSimpleName(), "onBindViewHolder:" + bindView);
             holder.txt.setText(mList.get(position));
         }
 

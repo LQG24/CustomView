@@ -3,9 +3,10 @@ package com.example.customview.View;
 import android.view.View;
 
 import androidx.recyclerview.widget.RecyclerView;
+
 /**
  * 自定义LayoutManager 实现列表展示 并且支持上下滑动
-* */
+ */
 public class CustomLayoutManager extends RecyclerView.LayoutManager {
     @Override
     public RecyclerView.LayoutParams generateDefaultLayoutParams() {
@@ -21,6 +22,12 @@ public class CustomLayoutManager extends RecyclerView.LayoutManager {
     @Override
     public void onLayoutChildren(RecyclerView.Recycler recycler, RecyclerView.State state) {
         super.onLayoutChildren(recycler, state);
+        //没有Item,界面空着
+        if(getItemCount() == 0){
+            detachAndScrapAttachedViews(recycler);
+            return;
+        }
+
         //定义竖直方向的偏移量
         int offsetY = 0;
         for (int i = 0; i < getItemCount(); i++) {
@@ -41,7 +48,7 @@ public class CustomLayoutManager extends RecyclerView.LayoutManager {
 
     /**
      * 得到RecyclerView用于显示item的真实高度
-    * */
+     */
     private int getVerticalSpace() {
         return getHeight() - getPaddingBottom() - getPaddingTop();
     }
@@ -63,8 +70,8 @@ public class CustomLayoutManager extends RecyclerView.LayoutManager {
      * 所以计算方法为：travel+mSumdy = 0;
      * => travel = -mSumdy
      * 所以要将它移到y=0的位置，需要移动的距离为-mSumdy
-     *
-     *
+     * <p>
+     * <p>
      * 判断到底的方法，其实就是我们需要知道所有item的总高度，用总高度减去最后一屏的高度，就是到底的时的偏移值，如果大于这个偏移值就说明超过底部了。
      */
     @Override
@@ -73,8 +80,8 @@ public class CustomLayoutManager extends RecyclerView.LayoutManager {
         //如果滑动到最顶部
         if (mSumDy + travel < 0) {
             travel = -mSumDy;
-        }else if(mSumDy+dy>mTotalHeight-getVerticalSpace()){  //mSumDy + dy 表示当前的移动距离,mTotalHeight - getVerticalSpace()表示当滑动到底时滚动的总距离
-            travel = mTotalHeight-getVerticalSpace()-mSumDy;
+        } else if (mSumDy + dy > mTotalHeight - getVerticalSpace()) {  //mSumDy + dy 表示当前的移动距离,mTotalHeight - getVerticalSpace()表示当滑动到底时滚动的总距离
+            travel = mTotalHeight - getVerticalSpace() - mSumDy;
         }
         mSumDy += travel;
 
