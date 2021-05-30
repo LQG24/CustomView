@@ -59,4 +59,5 @@ public class SimgleDraw extends View {
         paint.setColor(Color.RED);
         canvas.drawArc(rectf2,0,90,false,paint);
     }
+
 }

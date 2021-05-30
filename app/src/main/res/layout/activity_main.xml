@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/root_clayout"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_clayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onToAnimator"
+        android:text="动画画面" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onToTestLayout"
+        android:textAllCaps="false"
+        android:text="自定义ViewGroup"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onFlowLayout"
+        android:text="自定义流式布局"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCustomLayoutManage"
+        android:textAllCaps="false"
+        android:text="自定义LayoutManage"
+        />
 </LinearLayout>
