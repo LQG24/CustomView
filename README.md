@@ -20,4 +20,7 @@
 #FlowLayout 自定义ViewGroup 实现自适应容器实现
 #LinearItemDecoration 实现ItemDecoration与蒙版效果
 #CustomLayoutManager 自定义LayoutManager 实现列表展示 并且支持上下滑动
-                     # 实现回收复用
+                     #实现回收复用
+                     
+#########################事件冲突###############################
+#包名下event_conflict 外部拦截法和内部拦截法

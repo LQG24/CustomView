@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CustomLayoutManagerActivity"></activity>
+        <activity android:name=".event_conflict.EventConflictActivity"></activity>
+        <activity android:name=".event_conflict.EventConflictInnerActivity"></activity>
+        <activity android:name=".CustomLayoutManagerActivity" />
         <activity android:name=".FlowActivity" />
         <activity android:name=".TestLayoutActivity" />
         <activity android:name=".MainActivity">

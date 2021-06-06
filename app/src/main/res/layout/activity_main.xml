@@ -35,4 +35,20 @@
         android:textAllCaps="false"
         android:text="自定义LayoutManage"
         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onEventConflict"
+        android:textAllCaps="false"
+        android:text="滑动冲突外部拦截法"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onEventConflictInner"
+        android:textAllCaps="false"
+        android:text="滑动冲突内部拦截法"
+        />
 </LinearLayout>
