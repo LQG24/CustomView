@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@android:color/holo_orange_light"
     tools:context=".MainActivity">
 
     <Button
@@ -51,4 +52,14 @@
         android:textAllCaps="false"
         android:text="滑动冲突内部拦截法"
         />
+
+    <ImageView
+        android:id="@+id/custom_img"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
 </LinearLayout>

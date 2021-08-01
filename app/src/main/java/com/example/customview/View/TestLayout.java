@@ -35,8 +35,8 @@ public class TestLayout extends ViewGroup {
      * 具体值 -> MeasureSpec.EXACTLY
      *
      *
-     *    对应11000000000000000000000000000000;总共32位，前两位是1
-     *int MODE_MASK  = 0xc0000000;
+     * 对应11000000000000000000000000000000;总共32位，前两位是1
+     *int MODE_MASK  = 0xc0000000;（0x开始的数据表示16进制）
      *
      *    提取模式
      * public static int getMode(int measureSpec) {
@@ -135,8 +135,4 @@ public class TestLayout extends ViewGroup {
         return new MarginLayoutParams(LayoutParams.MATCH_PARENT,LayoutParams.MATCH_PARENT);
     }
 
-    @Override
-    protected void onDraw(Canvas canvas) {
-        super.onDraw(canvas);
-    }
 }
