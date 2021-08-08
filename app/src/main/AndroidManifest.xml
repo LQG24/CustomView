@@ -14,6 +14,7 @@
         <activity android:name=".CustomLayoutManagerActivity" />
         <activity android:name=".FlowActivity" />
         <activity android:name=".TestLayoutActivity" />
+        <activity android:name=".event_conflict.srl_vp.SRL_VP_main"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

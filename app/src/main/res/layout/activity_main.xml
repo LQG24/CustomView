@@ -63,6 +63,14 @@
         android:text="滑动冲突内部拦截法"
         />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onEventConflict1"
+        android:textAllCaps="false"
+        android:text="SwipeRefreshLayout和ViewPage事件冲突"
+        />
+
     <ImageView
         android:id="@+id/custom_img"
         android:layout_gravity="center_horizontal"

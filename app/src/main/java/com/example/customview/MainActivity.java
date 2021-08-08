@@ -18,6 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.customview.event_conflict.EventConflictActivity;
 import com.example.customview.event_conflict.EventConflictInnerActivity;
+import com.example.customview.event_conflict.srl_vp.SRL_VP_main;
 import com.example.customview.utils.SystemUtils;
 
 public class MainActivity extends AppCompatActivity {
@@ -168,4 +169,10 @@ public class MainActivity extends AppCompatActivity {
     public void onEventConflictInner(View view) {
         startActivity(new Intent(this, EventConflictInnerActivity.class));
     }
+
+    public void onEventConflict1(View view){
+        startActivity(new Intent(this, SRL_VP_main.class));
+    }
+
+
 }
