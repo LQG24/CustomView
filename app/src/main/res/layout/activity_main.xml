@@ -71,6 +71,22 @@
         android:text="SwipeRefreshLayout和ViewPage事件冲突"
         />
 
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onNestedActivity"
+        android:textAllCaps="false"
+        android:text="onNestedActivity 滑动嵌套"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onNestedTraditionActivity"
+        android:textAllCaps="false"
+        android:text="NestedTraditionActivity 滑动嵌套"/>
+
     <ImageView
         android:id="@+id/custom_img"
         android:layout_gravity="center_horizontal"

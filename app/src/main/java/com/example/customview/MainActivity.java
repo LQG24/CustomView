@@ -16,6 +16,8 @@ import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.customview.NestedScrolling.NestedTraditionActivity;
+import com.example.customview.NestedScrolling.nested_scroll_parent_child.NestScrollActivity;
 import com.example.customview.event_conflict.EventConflictActivity;
 import com.example.customview.event_conflict.EventConflictInnerActivity;
 import com.example.customview.event_conflict.srl_vp.SRL_VP_main;
@@ -172,6 +174,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void onEventConflict1(View view){
         startActivity(new Intent(this, SRL_VP_main.class));
+    }
+
+    public void onNestedActivity(View view){
+        startActivity(new Intent(this, NestScrollActivity.class));
+    }
+
+    public void onNestedTraditionActivity(View view){
+        startActivity(new Intent(this, NestedTraditionActivity.class));
     }
 
 
