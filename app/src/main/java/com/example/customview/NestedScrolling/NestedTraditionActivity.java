@@ -16,7 +16,7 @@ import com.google.android.material.tabs.TabLayoutMediator;
 import java.util.ArrayList;
 import java.util.List;
 /**
- * NestedTraditionActivity里边 NestedTraditionLayout实现NestedScrollingParent滑动嵌套 
+ * NestedTraditionActivity里边 NestedTraditionLayout实现NestedScrollingParent滑动嵌套
  */
 public class NestedTraditionActivity extends AppCompatActivity {
 

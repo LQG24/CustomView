@@ -28,3 +28,4 @@
 #包名下srl_vp SwipeRefreshLayout和ViewPage事件冲突 外部拦截法和内部拦截法
 #包名下NestedScrolling 同个方向的滑动嵌套NestedScrollingParent NestedScrollingChild
 #NestedTraditionActivity里边 NestedTraditionLayout实现NestedScrollingParent滑动嵌套 
+#CustomBehaviorActivity 自定义Behavior的嵌套滑动交互效果

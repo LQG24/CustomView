@@ -87,6 +87,13 @@
         android:textAllCaps="false"
         android:text="NestedTraditionActivity 滑动嵌套"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onDemo02Activity"
+        android:textAllCaps="false"
+        android:text="自定义Behavior的嵌套滑动交互效果"/>
+
     <ImageView
         android:id="@+id/custom_img"
         android:layout_gravity="center_horizontal"

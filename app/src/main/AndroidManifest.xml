@@ -17,6 +17,7 @@
         <activity android:name=".event_conflict.srl_vp.SRL_VP_main"/>
         <activity android:name=".NestedScrolling.nested_scroll_parent_child.NestScrollActivity"/>
         <activity android:name=".NestedScrolling.NestedTraditionActivity"/>
+        <activity android:name=".coordinatorLayout.CustomBehaviorActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
