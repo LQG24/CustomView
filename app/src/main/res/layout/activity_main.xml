@@ -18,6 +18,11 @@
         app:shape="rectangle"
         />
 
+    <com.example.customview.View.CustomLifeView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_blue_light"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

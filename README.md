@@ -29,3 +29,4 @@
 #包名下NestedScrolling 同个方向的滑动嵌套NestedScrollingParent NestedScrollingChild
 #NestedTraditionActivity里边 NestedTraditionLayout实现NestedScrollingParent滑动嵌套 
 #CustomBehaviorActivity 自定义Behavior的嵌套滑动交互效果
+#CustomLifeView 自定义View来观察View与Activity生命周期的变化
