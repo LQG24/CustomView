@@ -9,15 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".event_conflict.EventConflictActivity"></activity>
-        <activity android:name=".event_conflict.EventConflictInnerActivity"></activity>
+        <activity android:name=".constraint_layout.ConstraintActivity"></activity>
+        <activity android:name=".event_conflict.EventConflictActivity" />
+        <activity android:name=".event_conflict.EventConflictInnerActivity" />
         <activity android:name=".CustomLayoutManagerActivity" />
         <activity android:name=".FlowActivity" />
         <activity android:name=".TestLayoutActivity" />
-        <activity android:name=".event_conflict.srl_vp.SRL_VP_main"/>
-        <activity android:name=".NestedScrolling.nested_scroll_parent_child.NestScrollActivity"/>
-        <activity android:name=".NestedScrolling.NestedTraditionActivity"/>
-        <activity android:name=".coordinatorLayout.CustomBehaviorActivity"/>
+        <activity android:name=".event_conflict.srl_vp.SRL_VP_main" />
+        <activity android:name=".NestedScrolling.nested_scroll_parent_child.NestScrollActivity" />
+        <activity android:name=".NestedScrolling.NestedTraditionActivity" />
+        <activity android:name=".coordinatorLayout.CustomBehaviorActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

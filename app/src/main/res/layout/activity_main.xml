@@ -1,111 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/root_clayout"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@android:color/holo_orange_light"
-    tools:context=".MainActivity">
+    android:layout_height="wrap_content">
 
-    <com.example.customview.View.MyView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:custom_height="200"
-        app:custom_width="200"
-        app:bgColor="#00ff00"
-        app:shape="rectangle"
-        />
-
-    <com.example.customview.View.CustomLifeView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@android:color/holo_blue_light"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onToAnimator"
-        android:text="动画画面" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onToTestLayout"
-        android:textAllCaps="false"
-        android:text="自定义ViewGroup"
-        />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onFlowLayout"
-        android:text="自定义流式布局"
-        />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onCustomLayoutManage"
-        android:textAllCaps="false"
-        android:text="自定义LayoutManage"
-        />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onEventConflict"
-        android:textAllCaps="false"
-        android:text="滑动冲突外部拦截法"
-        />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onEventConflictInner"
-        android:textAllCaps="false"
-        android:text="滑动冲突内部拦截法"
-        />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onEventConflict1"
-        android:textAllCaps="false"
-        android:text="SwipeRefreshLayout和ViewPage事件冲突"
-        />
-
-
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onNestedActivity"
-        android:textAllCaps="false"
-        android:text="onNestedActivity 同个方向的滑动嵌套NestedScrollingParent NestedScrollingChild"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onNestedTraditionActivity"
-        android:textAllCaps="false"
-        android:text="NestedTraditionActivity 滑动嵌套"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onDemo02Activity"
-        android:textAllCaps="false"
-        android:text="自定义Behavior的嵌套滑动交互效果"/>
-
-    <ImageView
-        android:id="@+id/custom_img"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <View
+    <LinearLayout
+        android:id="@+id/root_clayout"
         android:layout_width="match_parent"
-        android:layout_height="10dp"/>
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_orange_light"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <com.example.customview.View.MyView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:bgColor="#00ff00"
+            app:custom_height="200"
+            app:custom_width="200"
+            app:shape="rectangle" />
+
+        <com.example.customview.View.CustomLifeView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_blue_light" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onToAnimator"
+            android:text="动画画面" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onToTestLayout"
+            android:text="自定义ViewGroup"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onFlowLayout"
+            android:text="自定义流式布局" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCustomLayoutManage"
+            android:text="自定义LayoutManage"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onEventConflict"
+            android:text="滑动冲突外部拦截法"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onEventConflictInner"
+            android:text="滑动冲突内部拦截法"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onEventConflict1"
+            android:text="SwipeRefreshLayout和ViewPage事件冲突"
+            android:textAllCaps="false" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onNestedActivity"
+            android:text="onNestedActivity 同个方向的滑动嵌套NestedScrollingParent NestedScrollingChild"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onNestedTraditionActivity"
+            android:text="NestedTraditionActivity 滑动嵌套"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onDemo02Activity"
+            android:text="自定义Behavior的嵌套滑动交互效果"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onConstraintLayout"
+            android:text="约束布局"
+            android:textAllCaps="false"
+            />
+
+        <ImageView
+            android:id="@+id/custom_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
