@@ -21,14 +21,17 @@
 
 <!--  但在某些情况下，我们可能希望使用WRAP_CONTENT，同时仍然强制执行约束以限制最终的尺寸。 app:layout_constrainedWidth/app:layout_constrainedHeight-->
 <!--    相反的约束的效果默认是使Widget居中；但是我们可以使用bias属性调整力量的比例 app:layout_constraintHorizontal_bias-->
+<!--    wrap_content与layout_constrainedWidth="true"结合-->
+<!--    android:layout_width="0dp" 与layout_constraintWidth_default="wrap" 结合-->
+
     <TextView
         android:id="@+id/tv_content"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ellipsize="end"
         android:singleLine="true"
         android:text="this is content this is content this this is content this is content this"
-        app:layout_constrainedWidth="true"
+        app:layout_constraintWidth_default="wrap"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
