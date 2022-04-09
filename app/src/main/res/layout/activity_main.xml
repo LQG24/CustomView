@@ -55,6 +55,13 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="onEventDeliver"
+            android:text="事件传递"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:onClick="onEventConflict"
             android:text="滑动冲突外部拦截法"
             android:textAllCaps="false" />
@@ -100,8 +107,7 @@
             android:layout_height="wrap_content"
             android:onClick="onConstraintLayout"
             android:text="约束布局"
-            android:textAllCaps="false"
-            />
+            android:textAllCaps="false" />
 
         <ImageView
             android:id="@+id/custom_img"

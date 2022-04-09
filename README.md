@@ -25,6 +25,7 @@
                      #实现回收复用
                      
 #########################事件冲突###############################
+#包名下 eventDeliver 事件传递
 #包名下event_conflict 外部拦截法和内部拦截法
 #包名下srl_vp SwipeRefreshLayout和ViewPage事件冲突 外部拦截法和内部拦截法
 #包名下NestedScrolling 同个方向的滑动嵌套NestedScrollingParent NestedScrollingChild

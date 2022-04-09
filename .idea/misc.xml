@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ASMIdeaPluginConfiguration">
     <asm skipDebug="false" skipFrames="false" skipCode="false" expandFrames="false" />
-    <groovy codeStyle="LEGACY" />
+    <groovy codeStyle="GROOVIFIER_0_2_0" />
   </component>
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_constraint.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_event_deliver.xml" value="0.15489130434782608" />
+        <entry key="app/src/main/res/layout/activity_flow_layout.xml" value="0.1598731884057971" />
+        <entry key="app/src/main/res/layout/activity_test_layout.xml" value="0.10099637681159421" />
+        <entry key="app/src/main/res/layout/dialog_a.xml" value="0.14166666666666666" />
       </map>
     </option>
   </component>
