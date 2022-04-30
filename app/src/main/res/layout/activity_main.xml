@@ -29,6 +29,24 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="onCustomPage"
+            android:text="自定义绘画"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onMyRegionView"
+            android:text="MyRegionView"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onItemDecoration"
+            android:text="ItemDecoration与蒙版效果"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:onClick="onToAnimator"
             android:text="动画画面" />
 

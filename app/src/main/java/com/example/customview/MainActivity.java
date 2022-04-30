@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         mRootLLayout = findViewById(R.id.root_clayout);
         levelImage = findViewById(R.id.custom_img);
 
-        addSingleDraw();
         levelImage.setImageBitmap(drawLevelImage());
 //        mRootLLayout.addView(new MyRegionView(this));
 //        mRootLLayout.addView(new DrawText(this),new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
@@ -146,8 +145,17 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void addSingleDraw() {
-        mRootLLayout.addView(new SimgleDraw(this));
+
+    public void onCustomPage(View view){
+        startActivity(new Intent(this,CustomDrawActivity.class));
+    }
+
+    public void onMyRegionView(View view){
+        startActivity(new Intent(this,MyRegionViewActivity.class));
+    }
+
+    public void onItemDecoration(View view){
+        startActivity(new Intent(this,LinearItemDecorationActivity.class));
     }
 
     public void onToAnimator(View view) {

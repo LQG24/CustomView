@@ -8,8 +8,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_constraint.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_custom_draw.xml" value="0.22509057971014493" />
         <entry key="app/src/main/res/layout/activity_event_deliver.xml" value="0.15489130434782608" />
         <entry key="app/src/main/res/layout/activity_flow_layout.xml" value="0.1598731884057971" />
+        <entry key="app/src/main/res/layout/activity_item_decoration.xml" value="0.14492753623188406" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.20677083333333332" />
+        <entry key="app/src/main/res/layout/activity_my_region_view.xml" value="0.2210144927536232" />
         <entry key="app/src/main/res/layout/activity_test_layout.xml" value="0.10099637681159421" />
         <entry key="app/src/main/res/layout/dialog_a.xml" value="0.14166666666666666" />
       </map>

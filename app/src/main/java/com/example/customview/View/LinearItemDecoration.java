@@ -17,6 +17,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 /**
  * 自定义ItemDecoration与蒙版效果
+ * https://blog.csdn.net/harvic880925/article/details/82959754
 * */
 
 public class LinearItemDecoration extends RecyclerView.ItemDecoration {

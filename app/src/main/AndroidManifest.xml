@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".MyRegionViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomDrawActivity"
+            android:exported="false" />
+        <activity
             android:name=".eventDeliver.EventDeliverActivity"
             android:exported="false" />
         <activity android:name=".constraint_layout.ConstraintActivity" />
@@ -17,6 +23,7 @@
         <activity android:name=".event_conflict.EventConflictInnerActivity" />
         <activity android:name=".CustomLayoutManagerActivity" />
         <activity android:name=".FlowActivity" />
+        <activity android:name=".LinearItemDecorationActivity" />
         <activity android:name=".TestLayoutActivity" />
         <activity android:name=".event_conflict.srl_vp.SRL_VP_main" />
         <activity android:name=".NestedScrolling.nested_scroll_parent_child.NestScrollActivity" />
