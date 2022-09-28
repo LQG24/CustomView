@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".surface.SurfaceViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".MyRegionViewActivity"
             android:exported="false" />
         <activity

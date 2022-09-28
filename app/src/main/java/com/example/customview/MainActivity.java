@@ -23,6 +23,8 @@ import com.example.customview.eventDeliver.EventDeliverActivity;
 import com.example.customview.event_conflict.EventConflictActivity;
 import com.example.customview.event_conflict.EventConflictInnerActivity;
 import com.example.customview.event_conflict.srl_vp.SRL_VP_main;
+import com.example.customview.surface.SurfaceViewActivity;
+import com.example.customview.surface.SurfaceViewTemplate;
 import com.example.customview.utils.SystemUtils;
 
 public class MainActivity extends AppCompatActivity {
@@ -204,6 +206,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void onConstraintLayout(View view){
 
+    }
+
+    public void onSurfaceView(View view){
+        startActivity(new Intent(this, SurfaceViewActivity.class));
     }
 
 

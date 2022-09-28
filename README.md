@@ -11,6 +11,7 @@
 # DrawText:drawText()详解  关于drawText的四线格与FontMetrics
 #ScrollerLayout 用Scroller实现View的弹性滑动
 #CustomViewPage 用Scroller实现ViewPage卡片切换功能
+#surface 相关绘制 SurfaceViewSinFun绘制正铉曲线 SurfaceViewHandWriting 手指绘制
 
 ################################动画篇################################
 #PointView 用valueAnimation Evalutor实现自绘并加动效，还增加ARGB渐变
