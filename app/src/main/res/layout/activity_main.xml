@@ -134,6 +134,13 @@
             android:text="surfaceView视图"
             android:textAllCaps="false" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onTextureView"
+            android:text="textureView视图"
+            android:textAllCaps="false" />
+
         <ImageView
             android:id="@+id/custom_img"
             android:layout_width="wrap_content"

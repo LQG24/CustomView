@@ -25,6 +25,7 @@ import com.example.customview.event_conflict.EventConflictInnerActivity;
 import com.example.customview.event_conflict.srl_vp.SRL_VP_main;
 import com.example.customview.surface.SurfaceViewActivity;
 import com.example.customview.surface.SurfaceViewTemplate;
+import com.example.customview.texture.TextureViewActivity;
 import com.example.customview.utils.SystemUtils;
 
 public class MainActivity extends AppCompatActivity {
@@ -148,16 +149,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void onCustomPage(View view){
-        startActivity(new Intent(this,CustomDrawActivity.class));
+    public void onCustomPage(View view) {
+        startActivity(new Intent(this, CustomDrawActivity.class));
     }
 
-    public void onMyRegionView(View view){
-        startActivity(new Intent(this,MyRegionViewActivity.class));
+    public void onMyRegionView(View view) {
+        startActivity(new Intent(this, MyRegionViewActivity.class));
     }
 
-    public void onItemDecoration(View view){
-        startActivity(new Intent(this,LinearItemDecorationActivity.class));
+    public void onItemDecoration(View view) {
+        startActivity(new Intent(this, LinearItemDecorationActivity.class));
     }
 
     public void onToAnimator(View view) {
@@ -176,7 +177,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, CustomLayoutManagerActivity.class));
     }
 
-    public void onEventDeliver(View view){
+    public void onEventDeliver(View view) {
         startActivity(new Intent(this, EventDeliverActivity.class));
     }
 
@@ -188,28 +189,32 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, EventConflictInnerActivity.class));
     }
 
-    public void onEventConflict1(View view){
+    public void onEventConflict1(View view) {
         startActivity(new Intent(this, SRL_VP_main.class));
     }
 
-    public void onNestedActivity(View view){
+    public void onNestedActivity(View view) {
         startActivity(new Intent(this, NestScrollActivity.class));
     }
 
-    public void onNestedTraditionActivity(View view){
+    public void onNestedTraditionActivity(View view) {
         startActivity(new Intent(this, NestedTraditionActivity.class));
     }
 
-    public void onDemo02Activity (View view){
+    public void onDemo02Activity(View view) {
         startActivity(new Intent(this, CustomBehaviorActivity.class));
     }
 
-    public void onConstraintLayout(View view){
+    public void onConstraintLayout(View view) {
 
     }
 
-    public void onSurfaceView(View view){
+    public void onSurfaceView(View view) {
         startActivity(new Intent(this, SurfaceViewActivity.class));
+    }
+
+    public void onTextureView(View view) {
+        startActivity(new Intent(this, TextureViewActivity.class));
     }
 
 
